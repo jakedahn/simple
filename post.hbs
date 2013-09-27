@@ -5,13 +5,13 @@
 {{#post}}
   <article>
     <header>
-      <h2>{{title}}</h2><time datetime='{{date format="YYYY-MM-DD HH:MM:SS"}}'>{{date format="YYYY-MM-DD"}}</time>
-      <p>By Jake Dahn</p>
+      <h2>{{title}}</h2>
     </header>
 
     <section id='content_area'>
       {{content}}
     </section>
+    <time datetime='{{date format="YYYY-MM-DD HH:MM:SS"}}'> posted at {{date format="YYYY-MM-DD HH:MM:SS"}}</time>
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
