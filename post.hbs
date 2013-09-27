@@ -1,0 +1,17 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+{{#post}}
+  <article>
+    <header>
+      <h2>{{title}}</h2><time datetime='{{date format="YYYY-MM-DD HH:MM:SS"}}'>{{date format="YYYY-MM-DD"}}</time>
+      <p>By Jake Dahn</p>
+    </header>
+
+    <section id='content_area'>
+      {{content}}
+    </section>
+    <div id='disqus_thread'></div>
+  </article>
+{{/post}}

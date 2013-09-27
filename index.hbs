@@ -1,0 +1,8 @@
+{{!< default}}
+<ul>
+  {{#foreach posts}}
+    <li>
+      <span class='day'>{{date format='MM/DD/YY'}}</span> <a href="{{url}}">{{title}}</a>
+    </li>
+  {{/foreach}}
+</ul>
